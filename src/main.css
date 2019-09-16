@@ -19,6 +19,10 @@ body {
     width:auto;
 }
 
+.restaurant-list {
+    margin-bottom:80px;
+}
+
 .restaurant-item {
     height:280px;
     width:auto;
@@ -48,4 +52,39 @@ body {
 
 .restaurant-meta {
     margin-left:10px;
+}
+
+footer {
+    bottom:0;
+    left:0;
+    right:0;
+    position: fixed;
+    background-color: #2a2a2a;
+}
+
+footer h4 {
+    color: #ffffff;
+    font-size:14px;
+}
+
+footer img {
+    width: 30px;
+    height: auto;
+}
+
+.footer-item {
+    padding-top:20px;
+}
+
+.lunch img {
+    position:relative;
+    left:3px;
+    top:-4px;
+    margin-bottom:3px;
+}
+
+.internets img {
+    position:relative;
+    left:9px;
+    top:-6px;
 }

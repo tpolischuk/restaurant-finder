@@ -5,7 +5,7 @@ class RestaurantList extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="restaurant-list">
                 <RestaurantItem
                     restaurantName="Hopdoddy Burger Bar"
                     categoryType="Burgers"
