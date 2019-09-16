@@ -1,0 +1,20 @@
+body {
+    font-family: 'Nunito Sans', 'Helvetica', sans-serif;
+}
+
+.navbar {
+    background: #43e895;
+    padding-top:1.5rem;
+}
+
+.navbar-light .navbar-brand {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+}
+
+.map-icon {
+    height: 35px;
+    width:auto;
+}
