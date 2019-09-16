@@ -18,3 +18,34 @@ body {
     height: 35px;
     width:auto;
 }
+
+.restaurant-item {
+    height:280px;
+    width:auto;
+}
+
+.restaurant-item h3, .restaurant-item h4 {
+    color: #ffffff;
+}
+
+.restaurant-item h3 {
+    font-weight: 600;
+    font-size: 22px;
+    position:relative;
+}
+
+.restaurant-item h4 {
+    font-weight: 400;
+    font-size: 18px;
+    position:relative;
+}
+
+.restaurant-item-container, .restaurant-item {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.restaurant-meta {
+    margin-left:10px;
+}

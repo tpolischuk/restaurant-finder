@@ -21,12 +21,12 @@ export default class Example extends React.Component {
     render() {
         return (
             <div>
-                <Navbar light expand="md" className="justify-content-between">
+                <Navbar light expand="md" className="justify-content-between fixed-top">
                     <span className=""></span>
                     <NavbarBrand href="/" className="text-center">Lunch Tyme</NavbarBrand>
                     <img alt="map" className="map-icon" src="/images/icon_map@2x.png" />
                 </Navbar>
-            </div >
+            </div>
         );
     }
 }

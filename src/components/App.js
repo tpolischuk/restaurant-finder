@@ -1,9 +1,13 @@
 import React from 'react';
 import Header from './Header.js';
+import RestaurantList from './RestaurantList';
 
 const App = () => {
     return (
-        <div><Header /></div>
+        <div>
+            <Header />
+            <RestaurantList />
+        </div>
 
     );
 };
