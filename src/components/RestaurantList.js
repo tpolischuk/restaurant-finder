@@ -1,61 +1,24 @@
 import React from 'react';
 import RestaurantItem from './RestaurantItem';
 
-class RestaurantList extends React.Component {
+const RestaurantList = (props) => {
 
-    render() {
+    const restaurants = props.restaurants.map((props) => {
         return (
-            <div className="restaurant-list">
-                <RestaurantItem
-                    restaurantName="Hopdoddy Burger Bar"
-                    categoryType="Burgers"
-                    backgroundImageURL="http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/hopdoddy.png"
-                />
-                <RestaurantItem
-                    restaurantName="Pappadeaux Seafood Kitchen"
-                    categoryType="Seafood"
-                    backgroundImageURL="http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/pappadeaux.png"
-                />
-                <RestaurantItem
-                    restaurantName="Yard House"
-                    categoryType="Tap House"
-                    backgroundImageURL="http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/yardhouse.png"
-                />
-                <RestaurantItem
-                    restaurantName="Hopdoddy Burger Bar"
-                    categoryType="Burgers"
-                    backgroundImageURL="http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/hopdoddy.png"
-                />
-                <RestaurantItem
-                    restaurantName="Pappadeaux Seafood Kitchen"
-                    categoryType="Seafood"
-                    backgroundImageURL="http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/pappadeaux.png"
-                />
-                <RestaurantItem
-                    restaurantName="Yard House"
-                    categoryType="Tap House"
-                    backgroundImageURL="http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/yardhouse.png"
-                />
-                <RestaurantItem
-                    restaurantName="Hopdoddy Burger Bar"
-                    categoryType="Burgers"
-                    backgroundImageURL="http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/hopdoddy.png"
-                />
-                <RestaurantItem
-                    restaurantName="Pappadeaux Seafood Kitchen"
-                    categoryType="Seafood"
-                    backgroundImageURL="http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/pappadeaux.png"
-                />
-                <RestaurantItem
-                    restaurantName="Yard House"
-                    categoryType="Tap House"
-                    backgroundImageURL="http://sandbox.bottlerocketapps.com/BR_iOS_CodingExam_2015_Server/Images/yardhouse.png"
-                />
-
-
-            </div>
+            <RestaurantItem
+                key={props.name}
+                restaurantName={props.name}
+                categoryType={props.category}
+                backgroundImageURL={props.backgroundImageURL} />
         );
-    }
+    });
+
+
+    return (
+        <div className="restaurant-list col-md-6 col-sm-12">
+            {restaurants}
+        </div>
+    );
 
 }
 
