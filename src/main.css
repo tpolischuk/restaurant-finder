@@ -26,6 +26,7 @@ body {
 .restaurant-item {
     height:280px;
     width:auto;
+    cursor:pointer;
 }
 
 .restaurant-item h3, .restaurant-item h4 {

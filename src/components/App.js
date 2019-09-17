@@ -16,7 +16,7 @@ class App extends React.Component {
     componentDidMount = async () => {
         const response = await restaurants.get('/BR_iOS_CodingExam_2015_Server/restaurants.json', {});
         this.setState({ restaurants: response.data.restaurants });
-        this.setState({ selectedRestaurant: response.data.restaurants[0] })
+        this.setState({ selectedRestaurant: response.data.restaurants[0] });
     }
 
     onRestaurantSelect = (restaurant) => {

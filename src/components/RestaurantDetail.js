@@ -1,5 +1,5 @@
 import React from 'react';
-
+import RestaurantMap from './RestaurantMap';
 import RestaurantDetailContact from './RestaurantDetailContact';
 
 const RestaurantDetail = ({ restaurant }) => {
@@ -7,10 +7,9 @@ const RestaurantDetail = ({ restaurant }) => {
         return <div>Loading...</div>;
     }
 
-
     return (
         <div className="restaurant-detail">
-            <img src="http://placehold.it/450x450" alt="dothhislater" className="google-map" />
+            <RestaurantMap className="google-map" lat={restaurant.location.lat} lng={restaurant.location.lng} address={restaurant.location.address} />
             <div className="restaurant-detail-meta">
                 <h3>{restaurant.name}</h3>
                 <h4>{restaurant.category}</h4>
