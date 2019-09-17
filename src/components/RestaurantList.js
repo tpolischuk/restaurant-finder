@@ -1,22 +1,22 @@
 import React from 'react';
 import RestaurantItem from './RestaurantItem';
 
-const RestaurantList = (props) => {
+const RestaurantList = ({ restaurants, onRestaurantSelect }) => {
 
-    const restaurants = props.restaurants.map((props) => {
+    const renderedRestaurants = restaurants.map((restaurant) => {
         return (
             <RestaurantItem
-                key={props.name}
-                restaurantName={props.name}
-                categoryType={props.category}
-                backgroundImageURL={props.backgroundImageURL} />
+                key={restaurant.name}
+                restaurant={restaurant}
+                onRestaurantSelect={onRestaurantSelect} />
         );
+
     });
 
 
     return (
-        <div className="restaurant-list col-md-6 col-sm-12">
-            {restaurants}
+        <div>
+            {renderedRestaurants}
         </div>
     );
 
