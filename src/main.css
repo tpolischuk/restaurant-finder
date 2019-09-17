@@ -55,10 +55,18 @@ body {
 }
 
 .restaurant-detail {
-    position: fixed;
-    height:400px;
-    border:1px solid red;
-    top:120px;
+    position:fixed;
+}
+
+.restaurant-detail-meta {
+    background-color: #34b379;
+    color: #ffffff;
+    padding: 25px;
+}
+
+.restaurant-detail-contact {
+    padding:15px;
+    font-size: 20px;
 }
 
 footer {
