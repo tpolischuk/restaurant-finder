@@ -15,7 +15,7 @@ const RestaurantList = ({ restaurants, onRestaurantSelect }) => {
 
 
     return (
-        <div className="">
+        <div>
             {renderedRestaurants}
         </div>
     );
