@@ -1,6 +1,6 @@
 # Lunch Tyme React App for Bottle Rocket
 
-![Desktop View](https://imgur.com/CVjjmKA)
+![Desktop View](https://i.imgur.com/CVjjmKA.png)
 
 This is a react application created for the test assignment for Bottle rocket. 
 
