@@ -60,6 +60,7 @@ body {
     width:100%;
     margin-top: 62px;
     transition: all 400ms ease-in;
+    background: #ffffff;
 }
 
 .restaurant-detail.transitioned {
@@ -125,4 +126,25 @@ footer img {
     position:relative;
     left:9px;
     top:-6px;
+}
+
+@media (max-width: 760px) {
+    .d-flex.main-container {
+        flex-direction:column;
+    }
+
+    .restaurant-list {
+        margin-bottom: 0;
+    }
+
+    .restaurant-detail-container {
+        z-index:10;
+        position:fixed;
+        top:0;
+        left:0;
+    }
+
+    .restaurant-detail {
+        height:100%;
+    }
 }

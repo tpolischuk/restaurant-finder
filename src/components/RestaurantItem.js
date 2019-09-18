@@ -8,8 +8,7 @@ const RestaurantItem = ({ restaurant, onRestaurantSelect }) => {
         <div
             className="restaurant-item-container"
             style={{
-                backgroundImage: `url(${restaurant.backgroundImageURL})`,
-
+                backgroundImage: `url(${restaurant.backgroundImageURL})`
             }}
             onClick={() => onRestaurantSelect(restaurant)}>
             <div

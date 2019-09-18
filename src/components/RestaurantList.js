@@ -15,7 +15,7 @@ const RestaurantList = ({ restaurants, onRestaurantSelect }) => {
 
 
     return (
-        <div className="flex-fill">
+        <div className="">
             {renderedRestaurants}
         </div>
     );

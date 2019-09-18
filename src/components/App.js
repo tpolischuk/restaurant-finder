@@ -36,13 +36,13 @@ class App extends React.Component {
         return (
             <div>
                 <Header />
-                <div className="d-flex">
+                <div className="d-flex main-container">
                     <div className="flex-fill restaurant-list">
                         <RestaurantList
                             restaurants={this.state.restaurants}
                             onRestaurantSelect={this.onRestaurantSelect} />
                     </div>
-                    <div className="flex-fill flex-grow-1">
+                    <div className="flex-fill flex-grow-1 restaurant-detail-container">
                         <RestaurantDetail transition={this.state.transition} restaurant={this.state.selectedRestaurant} />
                     </div>
                 </div>
