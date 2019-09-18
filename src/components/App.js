@@ -10,7 +10,8 @@ class App extends React.Component {
 
     state = {
         restaurants: [],
-        selectedRestaurant: null
+        selectedRestaurant: null,
+        transition: false
     };
 
     componentDidMount = async () => {
@@ -20,21 +21,29 @@ class App extends React.Component {
     }
 
     onRestaurantSelect = (restaurant) => {
-        this.setState({ selectedRestaurant: restaurant });
+        if (this.state.selectedRestaurant !== restaurant) {
+            this.setState({ selectedRestaurant: restaurant });
+
+            this.setState(({ transition: true }))
+
+            setTimeout(function () {
+                this.setState(({ transition: false }))
+            }.bind(this), 400);
+        }
     };
 
     render() {
         return (
             <div>
                 <Header />
-                <div className="row">
-                    <div className="col-md-6">
+                <div className="d-flex">
+                    <div className="flex-fill restaurant-list">
                         <RestaurantList
                             restaurants={this.state.restaurants}
                             onRestaurantSelect={this.onRestaurantSelect} />
                     </div>
-                    <div className="col-md-6">
-                        <RestaurantDetail restaurant={this.state.selectedRestaurant} />
+                    <div className="flex-fill flex-grow-1">
+                        <RestaurantDetail transition={this.state.transition} restaurant={this.state.selectedRestaurant} />
                     </div>
                 </div>
                 <Footer />

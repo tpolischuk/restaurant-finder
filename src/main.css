@@ -21,11 +21,11 @@ body {
 
 .restaurant-list {
     margin-bottom:80px;
+    margin-top: 62px;
 }
 
 .restaurant-item {
     height:280px;
-    width:auto;
     cursor:pointer;
 }
 
@@ -57,6 +57,19 @@ body {
 
 .restaurant-detail {
     position:fixed;
+    width:100%;
+    margin-top: 62px;
+    transition: all 400ms ease-in;
+}
+
+.restaurant-detail.transitioned {
+    transform: translateX(0);
+    opacity: 100%;
+}
+
+.restaurant-detail.transitioning {
+    transform: translateX(100%);
+    opacity: 0;
 }
 
 .restaurant-detail-meta {
@@ -68,6 +81,15 @@ body {
 .restaurant-detail-contact {
     padding:15px;
     font-size: 20px;
+}
+
+.map-container {
+    min-height: 300px;
+}
+
+.restaurant-map {
+    position:relative;
+    top:10px;
 }
 
 footer {

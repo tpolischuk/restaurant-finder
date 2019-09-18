@@ -13,11 +13,12 @@ class RestaurantMap extends React.Component {
         const iframeSource = `${baseUrl}search?key=${key}&q=${address}`
 
         return (
-            <div style={{ height: '450px', width: '450px' }}>
+            <div className="map-container">
                 <iframe
+                    className="restaurant-map"
                     title="restaurant-map"
-                    width="600"
-                    height="450"
+                    width="100%"
+                    height="320"
                     frameBorder="0"
                     src={iframeSource}></iframe>
             </div>

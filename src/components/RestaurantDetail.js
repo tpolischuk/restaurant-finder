@@ -2,14 +2,17 @@ import React from 'react';
 import RestaurantMap from './RestaurantMap';
 import RestaurantDetailContact from './RestaurantDetailContact';
 
-const RestaurantDetail = ({ restaurant }) => {
+const RestaurantDetail = ({ restaurant, transition }) => {
     if (!restaurant) {
         return <div>Loading...</div>;
     }
 
+    let classes = `restaurant-detail ${transition ? 'transitioning' : 'transitioned'}`
+
     return (
-        <div className="restaurant-detail">
-            <RestaurantMap className="google-map" lat={restaurant.location.lat} lng={restaurant.location.lng} address={restaurant.location.address} />
+        <div className={classes}>
+            <RestaurantMap className="google-map"
+                address={restaurant.location.address} />
             <div className="restaurant-detail-meta">
                 <h3>{restaurant.name}</h3>
                 <h4>{restaurant.category}</h4>
