@@ -11,7 +11,11 @@ body {
     color: #ffffff;
     font-weight: 600;
     font-size: 1.5rem;
-    margin-left: 3rem;
+    margin-left: 1.5rem;
+}
+
+.back-span {
+    visibility: hidden;
 }
 
 .map-icon {
@@ -146,5 +150,17 @@ footer img {
 
     .restaurant-detail {
         height:100%;
+    }
+
+    .back-button {
+        display:block;
+        height: 40px;
+        width: auto;
+        color: #ffffff;
+    }
+
+    .back-span {
+        width: 30px;
+        visibility: visible;
     }
 }
