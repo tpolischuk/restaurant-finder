@@ -10,7 +10,9 @@ class RestaurantMap extends React.Component {
 
         const address = this.props.address;
 
-        const iframeSource = `${baseUrl}search?key=${key}&q=${address}`
+        const restaurant = this.props.restaurant;
+
+        const iframeSource = `${baseUrl}search?key=${key}&zoom=15&q=${address}${restaurant}`
 
         return (
             <div className="map-container">

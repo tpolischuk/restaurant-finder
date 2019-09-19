@@ -11,8 +11,12 @@ const RestaurantDetail = ({ restaurant, transition }) => {
 
     return (
         <div className={classes}>
-            <RestaurantMap className="google-map"
-                address={restaurant.location.address} />
+
+            <RestaurantMap
+                className="google-map"
+                address={restaurant.location.address}
+                restaurant={restaurant.name} />
+
             <div className="restaurant-detail-meta">
                 <h3>{restaurant.name}</h3>
                 <h4>{restaurant.category}</h4>
