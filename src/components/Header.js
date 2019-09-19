@@ -17,7 +17,6 @@ export default class Header extends React.Component {
     }
 
     toggle() {
-
         //For if we need a toggling nav in the future
         this.setState({
             isOpen: !this.state.isOpen

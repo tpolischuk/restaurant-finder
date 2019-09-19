@@ -28,6 +28,7 @@ const RestaurantDetailContact = (restaurant) => {
             <div>No contact information found</div>
         )
     }
+
 }
 
 export default RestaurantDetailContact;

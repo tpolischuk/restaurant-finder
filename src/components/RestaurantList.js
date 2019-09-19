@@ -10,9 +10,7 @@ const RestaurantList = ({ restaurants, onRestaurantSelect }) => {
                 restaurant={restaurant}
                 onRestaurantSelect={onRestaurantSelect} />
         );
-
     });
-
 
     return (
         <div>

@@ -26,7 +26,6 @@ class RestaurantMap extends React.Component {
             </div>
         );
     }
-
 }
 
 export default RestaurantMap;
