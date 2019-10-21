@@ -1,8 +1,8 @@
-# Lunch Tyme React App for Bottle Rocket
+# Lunch Tyme React App
 
 ![Desktop View](https://i.imgur.com/CVjjmKA.png)
 
-This is a react application created for the test assignment for Bottle rocket. 
+This is a react application created as an example UI for a restaurant finding application. 
 
 To use, clone the repository. 
 
